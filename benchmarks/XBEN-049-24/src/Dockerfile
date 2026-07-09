@@ -13,7 +13,7 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-ARG flag
+ARG flag=FLAG{XBEN-049-24-default}
 
 RUN sed -i s/@FLAG@/$flag/g secret.txt
 
