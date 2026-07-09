@@ -4,7 +4,7 @@ services:
     expose:
       - 3306:3306
     healthcheck:
-      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost","--password=app_conf","-u","root"]
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost","--password=trading_platform_2024","-u","root"]
       timeout: 1s
       retries: 5
       interval: 10s
