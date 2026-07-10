@@ -17,7 +17,7 @@ COPY ./website/app_conf.wsgi /var/www/app_conf/
 COPY ./website/run.py /var/www/app_conf/
 COPY ./website/app /var/www/app_conf/app
 
-ARG flag  
+ARG flag=FLAG{XBEN-027-24-default}
 RUN echo -n $flag > /flag
 
 RUN a2dissite 000-default.conf

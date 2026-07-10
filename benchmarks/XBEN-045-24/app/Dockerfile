@@ -9,7 +9,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app
 
-ARG flag  
+ARG flag=FLAG{XBEN-045-24-default}
 RUN echo -n $flag > /FLAG.txt
 
 WORKDIR /app

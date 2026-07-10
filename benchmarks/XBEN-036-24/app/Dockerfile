@@ -5,7 +5,7 @@ RUN pip3 install lxml==5.2.2
 
 COPY . /app
 
-ARG flag
+ARG flag=FLAG{XBEN-036-24-default}
 
 RUN sed -i s/FLAG/$flag/g flag.txt
 

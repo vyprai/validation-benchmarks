@@ -3,7 +3,7 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
 
 COPY . /app
 
-ARG flag
+ARG flag=FLAG{XBEN-006-24-default}
 
 RUN sed -i s/FLAG/$flag/g flag.txt
 
